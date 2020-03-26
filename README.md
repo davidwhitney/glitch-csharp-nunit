@@ -1,21 +1,28 @@
-# hello-express
+# Hello ASP.NET!
 
-A server that serves a webpage, its resources, and some data
+This is a stripped back version of the ASP.NET MVC `dotnet new` starter template
 
+# Changes from the default
+
+- No Bootstrap and stripped back layout
+- No jQuery
+- Removed "development" mode and "production" CSS filters from the views
+- Glitch executes the web app in development mode by default so you see detailed errors
 
 ## Your Project
 
 On the front-end,
 
-- Edit `views/index.html` to change the content of the webpage
-- `public/client.js` is the javacript that runs when you load the webpage
-- `public/style.css` is the styles for `views/index.html`
+- Edit `Views/[Controller]/[Action]` to change the content of the MVC pages
+- `wwwroot/js/site.js` is the javacript that runs when you load the webpage
+- `css/style.css` is the styles for ``Views/[Controller]/[Action]`
 - Drag in `assets`, like images or music, to add them to your project
 
 On the back-end,
 
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
+- your app starts at `Program.cs`
+- with routes defined in `Startup.cs`
+- add nuget packages in `Website.csproj`
 - safely store app secrets in `.env` (nobody can see this but you and people you invite)
 
 Click `Show` in the header to see your app live. Updates to your code will instantly deploy.
