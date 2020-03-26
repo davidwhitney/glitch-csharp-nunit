@@ -5,6 +5,7 @@
     "install": {
       "include": [
         "^glitch\\.json$",
+        "^Website\\.csproj$",
         "^install\\.sh$",
         "^\\.env$"
       ]
