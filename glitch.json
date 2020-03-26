@@ -1,6 +1,6 @@
 {
   "install": "dotnet restore",
-  "start": "dotnet run",
+  "start": "dotnet run --ASPNETCORE_ENVIRONMENT Development",
   "watch": {
     "install": {
       "include": [
