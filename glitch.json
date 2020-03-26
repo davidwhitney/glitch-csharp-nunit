@@ -15,10 +15,7 @@
         "^Views/",
         "^wwwroot/"
       ],
-      "include": [
-        "\\.rkt$",
-        "\\.scm$"
-      ]
+      "include": [ "\\.cs$" ]
     },
     "throttle": 1000
   }
