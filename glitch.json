@@ -11,7 +11,7 @@
     },
     "restart": {
       "exclude": [
-        "^racket/"
+        "^Views/"
       ],
       "include": [
         "\\.rkt$",
