@@ -1,0 +1,4 @@
+/app/obj/Debug/netcoreapp2.1/Website.csprojAssemblyReference.cache
+/app/obj/Debug/netcoreapp2.1/Website.csproj.CoreCompileInputs.cache
+/app/obj/Debug/netcoreapp2.1/Website.AssemblyInfoInputs.cache
+/app/obj/Debug/netcoreapp2.1/Website.AssemblyInfo.cs

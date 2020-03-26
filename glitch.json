@@ -1,0 +1,23 @@
+{
+  "install": "dotnet restore",
+  "start": "dotnet run",
+  "watch": {
+    "install": {
+      "include": [
+        "^glitch\\.json$",
+        "^install\\.sh$",
+        "^\\.env$"
+      ]
+    },
+    "restart": {
+      "exclude": [
+        "^racket/"
+      ],
+      "include": [
+        "\\.rkt$",
+        "\\.scm$"
+      ]
+    },
+    "throttle": 1000
+  }
+}
