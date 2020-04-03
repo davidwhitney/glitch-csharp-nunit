@@ -13,6 +13,7 @@ namespace Tests
         public void PassingTest()
         {
             Assert.Pass();
+            // Assert.That(1, Is.EqualTo(1));
         }
 
         [Test]
