@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using Microsoft.AspNetCore.Mvc;
@@ -9,7 +9,7 @@ namespace App.Controllers
     {
         public async Task<IActionResult> Index()
         {
-            const string resultsPath = "../Tests/TestResults/results.trx";
+            const string resultsPath = "../tests/TestResults/results.trx";
             var contents = await System.IO.File.ReadAllTextAsync(resultsPath);
 
             var deserializer = new XmlSerializer(typeof(TestRun));
