@@ -1,22 +1,19 @@
 {
-  "install": "dotnet restore",
-  "start": "dotnet run --ASPNETCORE_ENVIRONMENT Development",
+  "install": "dotnet restore ./tests/Tests.csproj && dotnet restore ./web/App.csproj",
+  "start": "dotnet test ./tests/Tests.csproj --logger 'trx;LogFileName=./results.trx' || true && dotnet run --project ./web/App.csproj",
   "watch": {
     "install": {
       "include": [
         "^glitch\\.json$",
-        "^Website\\.csproj$",
-        "^install\\.sh$",
+        "^tests\\Tests.csproj$",
+        "^tests\\App.csproj$",
         "^\\.env$"
       ]
     },
     "restart": {
-      "exclude": [
-        "^Views/",
-        "^wwwroot/"
-      ],
+      "exclude": [ "^wwwroot/", "^tests/TestResults/" ],
       "include": [ "\\.cs$" ]
     },
-    "throttle": 1000
+    "throttle": 5000
   }
 }
