@@ -11,7 +11,7 @@
       ]
     },
     "restart": {
-      "exclude": [ "^wwwroot/", "^tests/TestResults/" ],
+      "exclude": [ "^tests/TestResults/" ],
       "include": [ "\\.cs$" ]
     },
     "throttle": 5000
